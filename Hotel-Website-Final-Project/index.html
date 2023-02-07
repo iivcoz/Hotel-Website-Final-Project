@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <nav class="header">
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="Hotel logo" title="Home Page">
+            </a>
+            <div class="header-mid">
+                <li class="list"><a href="#" class="header-text" id="add-feedback">ADD FEEDBACK ENTRY</a></li>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="list"><a href="register.html" class="header-text">REGISTER</a></li>
+                    <li class="list"><a href="login.html" class="header-text">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="feedback-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-btn">&times;</span>
+                <form onsubmit="closeModal()">
+                    <div class="fb-fields">
+                        <label class="feedback-label">Write your feedback please</label>
+                        <textarea rows="5" cols="50" class="feedback-field" id="feedback-field" placeholder="Write here..." required autofocus></textarea>
+                        <input type="submit" class="feedback-submit-button hover-effect" id="feedback-submit" title="Submit your feedback" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="slideshow">
+            <div class="black-dim">
+                <div class="textover-images">
+                    <h1>COMFORT AND LUXURY</h1>
+                </div>
+            </div>
+
+            <div class="slider-div">
+                <img id="slide-1" src="images/slide-1.jpg" alt="Hotel-images">
+                <img id="slide-2" src="images/slide-2.jpg" alt="Hotel-images">
+                <img id="slide-3" src="images/slide-3.jpg" alt="Hotel-images">
+                <img id="slide-4" src="images/slide-4.jpg" alt="Hotel-images">
+            </div>
+            <div class="slider-dots">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+            </div>
+        </div>
+        <div class="paragraph-div">
+            <h1 class="paragraph-title">Reach us</h1>
+            <p class="paragraph-text">Saif Hassan Alharbi - ID:439009961 - Email: s439009961@st.uqu.edu.sa</p>
+            <p class="paragraph-text">Abdulmajeed Bandar balelah - ID:441012474 - Email: s441012474@st.uqu.edu.sa</p>
+            <p class="paragraph-text">Anas Ahmad Hameed Alhasani - ID:441001648 - Email: s441001648@st.uqu.edu.sa</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

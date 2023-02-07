@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <nav class="header">
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="Hotel logo" title="Home Page">
+            </a>
+            <div class="header-mid">
+                <li class="list"><a href="#" class="header-text" id="add-feedback">ADD FEEDBACK ENTRY</a></li>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="list"><label class="disabled-text" title="You are in the registeration page">REGISTER</label></li>
+                    <li class="list"><a href="login.html" class="header-text">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="feedback-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-btn">&times;</span>
+                <form onsubmit="closeModal()">
+                    <div class="fb-fields">
+                        <label class="feedback-label">Write your feedback please</label>
+                        <textarea rows="5" cols="50" class="feedback-field" id="feedback-field" placeholder="Write here..." required autofocus></textarea>
+                        <input type="submit" class="feedback-submit-button hover-effect" id="feedback-submit" title="Submit your feedback" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="reg-page">
+            <form class="reg-form">
+                <h1>Registration form</h1>
+                <div>
+                    <label for="fullName" class="error-message" id="fullNameError">Full name must be between 5 and 24 characters</label>
+                    <input type="text" class="input-field" id="fullName" title="Full name" placeholder="Enter Full name" required autofocus>
+                </div>
+                <div>
+                    <label for="userName" class="error-message" id="userNameError">Username must be between 5 and 16 characters</label>
+                    <input type="text" class="input-field" id="userName" title="Username" placeholder="Enter Username" required>
+                </div>
+
+                <div>
+                    <label for="email" class="error-message" id="emailError">Email must be between 8 and 24 characters</label>
+                    <input type="email" class="input-field" id="email" title="Email" placeholder="Enter Email" required>
+                </div>
+                <div>
+                    <label for="password" class="error-message" id="passwordError">Password must be between 8 and 16 characters</label>
+                    <input type="Password" class="input-field" id="password" title="Password" placeholder="Enter Password" required>
+                </div>
+                <div>
+                    <label for="confirmedPassword" class="error-message" id="confirmedPasswordError">Must match password</label>
+                    <input type="Password" class="input-field" id="confirmedPassword" title="Confirmed Password" placeholder="Confirmed Password" required>
+                </div>
+                <input type="submit" class="submit-button hover-effect" id="submitButton" title="Submit your registration" value="Create an Account" disabled>
+                <div class="hyperlink">
+                    <label for="login-link">Already have an account?</label>
+                    <a href="login.html" id="reg-link">Login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
